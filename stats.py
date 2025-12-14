@@ -7,13 +7,9 @@ def nummber_of_words(path_to_file):
   words = path_to_file.split()
   num_words = len(words)
   return f"Found {num_words} total words"
-def clean_text(text):
-    return text.lower()
-ctext = clean_text(text)
 def num_of_character(text):
   characters = {}
-  char = ctext.split()
-  for i in char:
+  for i in text.lower():
     if i.isalpha():
       if i in characters:
         characters+= 1
