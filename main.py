@@ -1,6 +1,5 @@
 from stats import nummber_of_words
-from stats import text
-count = nummber_of_words(text)
+count = nummber_of_words("books/frankenstein.txt")
 print(count)
   
   
