@@ -6,7 +6,7 @@ text = get_book_text("books/frankenstein.txt")
 def nummber_of_words(path_to_file):
   words = path_to_file.split()
   num_words = len(words)
-return f"Found {num_words} total words"
+  return f"Found {num_words} total words"
 count = nummber_of_words(text)
 print(count)
   
