@@ -8,7 +8,15 @@ def nummber_of_words(path_to_file):
   num_words = len(words)
   return f"Found {num_words} total words"
 def num_of_character(text):
-    return len(text)
-  
+  characters = {}
+  for i in text.lower():
+    if i.isalpha():
+      if i in characters:
+        characters+= 1
+      else:
+        characters = 1
+    return characters 
+     
+    
 
 
