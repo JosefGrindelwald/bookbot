@@ -11,7 +11,7 @@ def num_of_character(path_to_file):
   words = path_to_file.split()
   characters = []
   for i in (0, len(words), 1):
-    characters.append(words[i])
+    characters.append(words(i))
   return len(characters)
 
 
