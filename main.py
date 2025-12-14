@@ -9,7 +9,7 @@ def nummber_of_words(path_to_file):
   for i in range(0, len(words), 1):
     num_words += 1
     return f"Found {num_words} total words"
-count = nummber_of_words("books/frankenstein.txt")
+count = nummber_of_words(text)
 print(count)
   
   
