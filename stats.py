@@ -10,8 +10,8 @@ def nummber_of_words(path_to_file):
 def num_of_character(path_to_file):
   words = path_to_file.split()
   characters = []
-  for i in (0, len(words), 1):
-    characters.append(words(i))
+  for i in (1, len(words), 1):
+    characters.append(words[i])
   return len(characters)
 
 
