@@ -9,7 +9,7 @@ def nummber_of_words(path_to_file):
   return f"Found {num_words} total words"
 def num_of_character(path_to_file):
   characters = {}
-  for i in text.lower():
+  for i in path_to_file.lower():
     if i.isalpha():
       if i in characters:
         characters+= 1
