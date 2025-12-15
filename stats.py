@@ -12,9 +12,9 @@ def num_of_character(path_to_file):
   for i in path_to_file.lower():
     if i.isalpha():
       if i in characters:
-        characters+= 1
+        characters[i]+= 1
       else:
-        characters = 1
+        characters[i] = 1
   return characters 
      
     
