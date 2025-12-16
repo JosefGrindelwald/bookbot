@@ -2,7 +2,7 @@ def get_book_text(path_to_file):
   with open(path_to_file) as f:
     file_contents = f.read()
     return file_contents 
-text = get_book_text("books/frankenstein.txt")
+text = get_book_text(path_to_file)
 def nummber_of_words(path_to_file):
   words = path_to_file.split()
   num_words = len(words)
@@ -23,5 +23,7 @@ liste = [
     {"key": k, "value": v}
     for k, v in daten.items()
 ]
+liste.sort(key=sort_on, reverse=True)
+
 
 
