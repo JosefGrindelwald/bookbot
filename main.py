@@ -1,18 +1,34 @@
 import sys
-from stats import num_of_character
-from stats import nummber_of_words
-from stats import text
-from stats import liste
-from stats import sort_on
+from stats import (
+    get_book_text,
+    number_of_words,
+    num_of_character,
+    sort_characters
+)
+
+
+if len(sys.argv) != 2:
+    print("Usage: python main.py <path_to_book>")
+    sys.exit(1)
+
+path = sys.argv[1]
+
 print("============ BOOKBOT ============")
-print("Analyzing book found at books/frankenstein.txt...")
+print(f"Analyzing book found at {path}...")
+
+text = get_book_text(path)
+
 print("----------- Word Count ----------")
-count = nummber_of_words(text)
-print(count)
+print(f"Found {number_of_words(text)} total words")
+
 print("--------- Character Count -------")
-liste.sort(key=sort_on, reverse=True)
-for d in liste:
-    print(": ".join(map(str, d.values())))
-     
+
+characters = num_of_character(text)
+sorted_chars = sort_characters(characters)
+
+for d in sorted_chars:
+    print(f"{d['key']}: {d['value']}")
+
+print("============= END ===============")
   
   
