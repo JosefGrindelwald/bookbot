@@ -6,7 +6,8 @@ from stats import sort_on
 count = nummber_of_words(text)
 print(count)
 liste.sort(key=sort_on, reverse=True)
-print(liste)
+for d in liste:
+    print(*d.values())
      
   
   
