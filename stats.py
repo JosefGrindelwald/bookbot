@@ -17,7 +17,7 @@ def num_of_character(path_to_file):
         characters[i] = 1
   return characters 
 def sort_on(items):
-    return items["num"]
+    return items["value"]
 daten = num_of_character(text)
 liste = [
     {"key": k, "value": v}
