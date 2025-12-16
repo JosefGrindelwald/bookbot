@@ -7,7 +7,7 @@ count = nummber_of_words(text)
 print(count)
 liste.sort(key=sort_on, reverse=True)
 for d in liste:
-    print(" : ".join(map(str, d.values())))
+    print(": ".join(map(str, d.values())))
      
   
   
