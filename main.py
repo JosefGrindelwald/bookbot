@@ -5,7 +5,7 @@ from stats import sort_on
 count = nummber_of_words(text)
 print(count)
 liste = num_of_character(text)
-liste.sorted(reverse=True, key = sort_on)
+liste.sort(key=sort_on, reverse=True)
 print(liste)
      
   
