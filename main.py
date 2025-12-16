@@ -1,3 +1,4 @@
+import sys
 from stats import num_of_character
 from stats import nummber_of_words
 from stats import text
