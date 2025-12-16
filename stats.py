@@ -16,7 +16,8 @@ def num_of_character(path_to_file):
       else:
         characters[i] = 1
   return characters 
-     
+  def sort_on(items):
+    return items["num"]
     
 
 
